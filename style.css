@@ -16,17 +16,19 @@
    --Black: #000000;
 }
 .border{
-    border: 2px solid red;
+    border: 2px solid white;
 }
 body{
     background-color: #000000;
     color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     
 }
 
 /* default variables end */
 .height_navbar{
-    height: 20vh;
+    height: 16vh;
 }
 
 /* navbar start */
@@ -39,12 +41,13 @@ a{
     color: #ffffff;
 }
 .logo{
-    width: 140px;
-    height: 64px;
+    width: 250px;
+    height: 200px;
 }
 .nav-btn{
     background-color: var(--Red);
     color: #ffffff;
+    border: none;
    
 }
 
@@ -62,7 +65,7 @@ a{
     align-items: center;
 }
 .gap{
-    gap: 25px;
+    gap: 35px;
 }
 .wrap{
     flex-wrap: wrap;
@@ -161,7 +164,7 @@ a{
     margin: 20px;
 }
 .pt-1{
-    padding-top: 5px;
+    padding-top: 7px;
 }
 .pt-2{
     padding-top: 10px;
@@ -194,11 +197,11 @@ a{
     padding-left: 15px;
 }
 .pl-4{
-    padding-left: 20px;
+    padding-left: 230px;
 }
 
 .pl-5{
-    padding-left: 550px;
+    padding-left: 80px;
 }
 .pr-1{
     padding-right: 5px;
