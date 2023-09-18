@@ -86,15 +86,27 @@ a{
 
 .card-img{
     width: 206px;
+    height: 300px;
     object-fit: cover;
+}
+
+.discover-img1{
+    width: 648px;
+    height: 454px;
+   
+}
+.discover-content{
+    width: 648px;
+    height: 454px;
+    background-color: #0f0f0f;
+   
     
 }
 
 
-
 /* responsive */
 
-@media(max-width: 970px){
+@media(max-width: 1070px){
     .items{
         display: none;
     }
@@ -156,6 +168,10 @@ a{
 }
 .mt-4{
     margin-top: 20px;
+}
+
+.mt-5{
+    margin-top: 70px;
 }
 .mb-1{
     margin-bottom: 5px;
