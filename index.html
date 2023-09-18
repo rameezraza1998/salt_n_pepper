@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,29 +13,33 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- header divison start -->
     <header>
         <!-- navbar start -->
-        <nav class="nav_bar  display-flex height_navbar ">
+        <nav class="nav_bar display-flex justify-between height_navbar ">
             <!-- logo start  -->
-            <div class="divlogo  pl-5 pt-1 ml-3">
-                    <img class="logo" src="salt.jpg" alt="logo">
+            <div class=" ml-4 divlogo  ">
+                <img class="logo" src="assets/salt.jpg" alt="logo">
             </div>
-           <!-- logo end -->
+            <!-- logo end -->
 
-            <div class="items">
-                <ul class=" navbar-ul display-flex gap ml-4 pl-4">
+            <div class=" items">
+                <ul class=" navbar-ul display-flex wrap gap mr-5 ">
                     <li><a href="">Home</a></li>
                     <li> <a href="">Publications </a></li>
                     <li> <a href="">About Us </a> </li>
                     <li> <a href="">Feedback </a></li>
-                    <button class="nav-btn1 pt-3 pr-2 pb-3 pl-2 rounded"> <a href="#">Get a Franchise</a> </button>
-                    <button class="nav-btn pt-3 pr-3 pb-3 pl-3  rounded"> <a href="#">Order Online</a><span class="p-1">
-                        <i class="fa-sharp fa-solid fa-arrow-right font-size"></i> </span></button>
+                    <li> <a href="">Get a Franchise</a></li>
+                    <li><i class="fa-regular fa-user"></i> </li>
+                    <li><i class="fa-solid fa-cart-shopping"></i> </li>
+                    <button class="nav-btn pt-3 pr-2 pb-3 pl-3 rounded"> <a href="#">Order Online</a><span class="p-1">
+                            <i class="fa-sharp fa-solid fa-arrow-right font-size rounded"
+                                style="background-color: white; color: red;"></i> </span></button>
                 </ul>
             </div>
-            <div class="icon">
+            <div class=" icon">
                 <i class="fa-solid fa-bars" style="color: white; font-size: 3rem;"></i>
             </div>
         </nav>
@@ -44,9 +49,39 @@
 
     <!-- Main content start -->
     <main>
-        <section>
-            <img src="https://static.tossdown.com/images/f2d048e1-50ff-4cfc-b439-e208111187fb.webp" alt="">
-        </section>
+        <!-- main delicious image start  -->
+        <div>
+            <img class="main-img" src="assets/main.webp" alt="">
+        </div>
+        <!-- main delicious image end  -->   
+        <!-- choose by category start -->
+        <div class="mt-3">
+            <h1 class="text-center">Choose by Category</h1>
+            <div class="  justify-center display-flex wrap">
+                <div>
+                    <img   class="card-img"src="assets/pizza.webp" alt="pizza image">
+                    <h2>pizza</h2>
+                </div>
+    
+                <div>
+                    <img   class="card-img" src="assets/broast.webp" alt="broast image">
+                </div>
+    
+                <div>
+                    <img  class="card-img" src="assets/sandwhich.webp" alt="sandwhich image">
+                </div>
+    
+                <div>
+                    <img  class="card-img"src="assets/soup.webp" alt="soup image">
+                </div>
+    
+                <div>
+                    <img  class="card-img" src="assets/burger.webp" alt=" burger image">
+                </div>
+            </div>
+        </div >
+        <!-- choose by category end -->
+
     </main>
     <!-- Main content start -->
 
@@ -54,7 +89,7 @@
     <footer>
 
     </footer>
-     <!-- footer start -->
+    <!-- footer start -->
 </body>
 
 </html>

@@ -41,8 +41,8 @@ a{
     color: #ffffff;
 }
 .logo{
-    width: 200px;
-    height: 70px;
+    width: 180px;
+    height: 8vh;
 }
 .nav-btn{
     background-color: var(--Red);
@@ -51,28 +51,60 @@ a{
    
 }
 .font-size{
-    font-size: 17px;
+    font-size: 22px;
 }
 .nav-btn1{
     background-color: var(--Black);
     color: #ffffff;
     border: 2px solid #ffffff;
 
-}
-.icon{
+ }
+ .text-center{
+    text-align: center;
+ }
+ 
+ .icon{
     display: none;
-}
-@media(max-width: 940px){
+ }
+  
+@media(max-width: 970px){
         .items{
             display: none;
         }
         .icon{
             display: block;
+            
         }
+}    
+
+/* navbar end */
+
+/* main  */
+.main-img{
+    width: 100%;
+}
+
+.card-img{
+    width: 206px;
+    object-fit: cover;
+    
 }
 
 
-/* navbar end */
+
+/* responsive */
+
+@media(max-width: 970px){
+    .items{
+        display: none;
+    }
+    .icon{
+        display: block;
+        
+    }
+}    
+
+
 
 /* utility classes start */
 .display-flex{
@@ -147,11 +179,11 @@ a{
     margin-left: 10px;
 }
 .ml-4{
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .ml-5{
-    margin-left: 200px;
+    margin-left: 350px;
 }
 
 .mr-1{
@@ -166,6 +198,12 @@ a{
 .mr-4{
     margin-right: 20px;
 }
+
+
+.mr-5{
+    margin-right: 80px;
+}
+
 .m-1{
     margin: 5px;
 }
@@ -216,7 +254,7 @@ a{
 }
 
 .pl-5{
-    padding-left: 60px;
+    padding-left: 40px;
 }
 .pr-1{
     padding-right: 5px;
