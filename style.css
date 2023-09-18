@@ -59,8 +59,29 @@ a{
     border: 2px solid #ffffff;
 
  }
+ 
+.Learnmore-btn2{
+    background-color:  #0f0f0f;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 35px 10px 35px;
+    border-radius: 30px;
+
+ }
  .text-center{
     text-align: center;
+ }
+ 
+ .text-left{
+    text-align: left;
+ }
+ 
+ .text-right{
+    text-align: right;
+ }
+ 
+ .text-justify{
+    text-align: justify;
  }
  
  .icon{
@@ -91,14 +112,15 @@ a{
 }
 
 .discover-img1{
-    width: 648px;
+    width: 672px;
     height: 454px;
    
 }
 .discover-content{
-    width: 648px;
+    width: 673px;
     height: 454px;
     background-color: #0f0f0f;
+   
    
     
 }
@@ -202,6 +224,10 @@ a{
     margin-left: 350px;
 }
 
+.ml-6{
+    margin-left: 110px;
+}
+
 .mr-1{
     margin-right: 5px;
 }
@@ -270,7 +296,7 @@ a{
 }
 
 .pl-5{
-    padding-left: 40px;
+    padding-left: 110px;
 }
 .pr-1{
     padding-right: 5px;
