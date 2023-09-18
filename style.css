@@ -68,6 +68,16 @@ a{
     border-radius: 30px;
 
  }
+
+ 
+.order-online-btn2{
+    background-color: var(--Red);
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+
+ }
  .text-center{
     text-align: center;
  }
@@ -112,7 +122,7 @@ a{
 }
 
 .discover-img1{
-    width: 672px;
+    width: 676px;
     height: 454px;
    
 }
@@ -120,9 +130,20 @@ a{
     width: 673px;
     height: 454px;
     background-color: #0f0f0f;
+}
+
+
+.menu-img1{
+    width: 676px;
+    height: 454px;
+    /* margin: 0%; */
    
-   
-    
+}
+.menu-content{
+    width: 673px;
+    height: 454px;
+    background-color: #0f0f0f;
+    /* margin: 0%; */
 }
 .deal-card{
     width: 330px;
@@ -318,6 +339,12 @@ a{
 .pl-5{
     padding-left: 110px;
 }
+
+.pl-6{
+    padding-left: 145px;
+}
+
+
 .pr-1{
     padding-right: 5px;
 }
