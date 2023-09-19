@@ -121,6 +121,13 @@ a{
     object-fit: cover;
 }
 
+
+.card-img1{
+    width: 235px;
+    height: 250px;
+    object-fit: cover;
+}
+
 .discover-img1{
     width: 676px;
     height: 454px;
@@ -128,25 +135,25 @@ a{
 }
 .discover-content{
     width: 673px;
-    height: 454px;
+    height: 455px;
     background-color: #0f0f0f;
 }
 
 
 .menu-img1{
     width: 676px;
-    height: 454px;
+    height: 600px;
     /* margin: 0%; */
    
 }
 .menu-content{
     width: 673px;
-    height: 454px;
+    height: 600px;
     background-color: #0f0f0f;
     /* margin: 0%; */
 }
 .deal-card{
-    width: 330px;
+    width: 350px;
     height: 225px;
     object-fit: cover;
 }
@@ -262,10 +269,16 @@ a{
 .ml-7{
     margin-left: 40px;
 }
+.ml-9{
+    margin-left: 140px;
+}
 
+.ml-10{
+    margin-left: 100px;
+}
 
 .ml-8{
-    margin-left: 140px;
+    margin-left: 120px;
 }
 
 
@@ -342,6 +355,10 @@ a{
 
 .pl-6{
     padding-left: 145px;
+}
+
+.pl-7{
+    padding-left: 80px;
 }
 
 
