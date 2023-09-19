@@ -131,7 +131,7 @@ a{
 .discover-img1{
     width: 676px;
     height: 454px;
-   
+    object-fit: cover;
 }
 .discover-content{
     width: 673px;
@@ -143,6 +143,7 @@ a{
 .menu-img1{
     width: 676px;
     height: 600px;
+    object-fit: cover;
     /* margin: 0%; */
    
 }
