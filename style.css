@@ -255,15 +255,15 @@ a{
   }
 
   
-@media (max-width: 1350px) {
+@media (max-width: 900px) {
    
     
-    .box4{
+    .footer1{
         flex-direction: column;
     }
   }
 
-
+/* 
   
 @media (max-width: 1150px) {
     .box3{
@@ -283,7 +283,7 @@ a{
     .box1{
         flex-direction: column;
     }
-  }
+  } */
 
 
 
