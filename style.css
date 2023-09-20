@@ -134,6 +134,7 @@ a{
     object-fit: cover;
 }
 .discover-content{
+    margin: 0%;
     width: 673px;
     height: 455px;
     background-color: #0f0f0f;
@@ -157,6 +158,32 @@ a{
     width: 350px;
     height: 225px;
     object-fit: cover;
+}
+
+/* footer css */
+.footer-box{
+    width: 50%; 
+    height: 80vh;
+    border: 1px solid white;
+}
+.box1{
+    width: 60%;
+    height: 60vh;
+
+}
+
+.box2{
+    width: 40%;
+    height: 60vh;
+    color: #7e7c7c;
+    
+}
+
+.logo1{
+    margin-top: 15px;
+    /* background-color: #0f0f0f; */
+    width: 230px;
+    height: 8vh;
 }
 
 /* responsive */
