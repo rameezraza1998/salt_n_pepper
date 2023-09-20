@@ -177,18 +177,18 @@ a{
 
 /* footer css */
 .footer-box{
-    width: 50%; 
+    width: 100%; 
     height: 60vh;
     /* border: 1px solid white; */
 }
 .box1{
-    flex: 60%;
+    width: 35%;
     height: 60vh;
 
 }
 
 .box2{
-    flex: 40%;
+    width: 21.66%;
     height: 60vh;
     color: #ffffff;
     
@@ -203,13 +203,13 @@ a{
 
 
 .box3{
-    flex: 50%;
+    width: 21.66%;
     height: 60vh;
 
 }
 
 .box4{
-    flex: 50%;
+    width: 21.66%;
     height: 60vh;
 
 }
@@ -245,13 +245,21 @@ a{
     .discover-main {
       flex-direction: column;
     }
+    .discover-content, .discover{
+        width: 100%;
+    }
   }
 
   
 @media (max-width: 800px) {
     .menu-main {
       flex-direction: column;
+    
     }
+    .menu-content, .menu{
+        width: 100%;
+    }
+
   }
 
   
