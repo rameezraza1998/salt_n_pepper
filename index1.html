@@ -1,291 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salt-n-Pepper</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <title>Responsive Div with Flexbox</title>
+    <style>
+        #mainDiv {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            /* justify-content: space-between; Distribute items evenly along the main axis */
+            /* align-items: stretch; Stretch items to match the height of the container */
+            border: 2px solid red;
+        }
+
+        #subDiv1, #subDiv2 {
+            /* flex-basis: calc(50% - 10px); Set each sub-div to take up 50% of the container width with some spacing */
+            /* margin: 5px; Add some margin for spacing between sub-divs */
+            border: 1px solid #ccc; /* Add borders for visual separation */
+            padding: 10px; /* Add padding for content */
+        }
+        @media(max-width: 100px ) {
+             #subDiv2{
+                display: block;
+
+            }
+            
+        }
+    </style>
 </head>
-
 <body>
-    <!-- header divison start -->
-    <header>
-        <!-- navbar start -->
-        <nav class="nav_bar display-flex justify-between height_navbar ">
-            <!-- logo start  -->
-            <div class="ml-4 6 divlogo  ">
-                <img class="logo" src="assets/salt.jpg" alt="logo">
-            </div>
-            <!-- logo end -->
-
-            <div class=" items">
-                <ul class=" navbar-ul display-flex wrap gap mr-5 ">
-                    <li><a href="">Home</a></li>
-                    <li> <a href="">Publications </a></li>
-                    <li> <a href="">About Us </a> </li>
-                    <li> <a href="">Feedback </a></li>
-                    <li> <a href="">Get a Franchise</a></li>
-                    <li><i class="fa-regular fa-user"></i> </li>
-                    <li><i class="fa-solid fa-cart-shopping"></i> </li>
-                    <button class="nav-btn pt-2 pr-2 pb-2 pl-3 rounded"> <a href="#">Order Online</a><span class="p-1">
-                            <i class="fa-sharp fa-solid fa-arrow-right font-size rounded p-1"
-                                style="background-color: #ffffff; color: #ff0000;"></i> </span></button>
-                </ul>
-            </div>
-            <div class=" icon">
-                <i class="  fa-solid fa-bars" style="color: #ffffff; font-size: 2rem;"></i>
-            </div>
-        </nav>
-        <!-- navbar end -->
-    </header>
-    <!-- header divison end -->
-
-    <!-- Main content start -->
-    <main>
-        <!-- main delicious image start  -->
-        <div>
-            <img class="main-img " src="assets/main.webp" alt="">
+    <div id="mainDiv">
+        <div id="subDiv1">
+            <!-- Content for the first sub-div goes here -->
+            <p>This is the first sub-div.</p>
         </div>
-        <!-- main delicious image end  -->
-        <!-- choose by category start -->
-        <div class="mt-5">
-            <h1 class="text-center">Choose by Category</h1>
-            <div class=" mt-5 justify-center display-flex wrap">
-                <div>
-                    <img class="card-img " src="assets/pizza.webp" alt="pizza image">
-                    <p class="text-center mt-3">Pizza</p>
-                </div>
-
-                <div>
-                    <img class="card-img ml-3" src="assets/broast.webp" alt="broast image">
-                    <p class="text-center mt-3">Broast</p>
-                </div>
-
-                <div>
-                    <img class="card-img ml-3" src="assets/sandwhich.webp" alt="sandwhich image">
-                    <p class="text-center mt-3">Sandwhich</p>
-                </div>
-
-                <div>
-                    <img class="card-img ml-3" src="assets/soup.webp" alt="soup image">
-                    <p class="text-center mt-3">Soup</p>
-                </div>
-
-                <div>
-                    <img class="card-img ml-3" src="assets/burger.webp" alt=" burger image">
-                    <p class="text-center mt-3">Burger</p>
-                </div>
-            </div>
+        <div id="subDiv2">
+            <!-- Content for the second sub-div goes here -->
+            <p>This is the second sub-div.</p>
         </div>
-        <!-- choose by category end -->
-
-        <!-- discover area start -->
-
-        <div class="justify-center mt-5 display-flex wrap ">
-            <div class="display-flex wrap ">
-                <img class="discover-img1" src="assets/discoverimg1.webp" alt="discover-img">
-            </div>
-            <div class=" mt- display-flex wrap  discover-content">
-                <h3 class="pl-5 mt-5" style="color: red; letter-spacing: 3px;">SALT'N PEPPER RESTAURANT</h3>
-                <br>
-                <h1 class="pl-5">Discover The Taste!</h1>
-                <br> <br>
-                <p class="pl-5 text-justify " style="color: #7e7c7c; letter-spacing: 1px; font-size: 17px;">The Salt’n
-                    Pepper is Pakistan’s most recognized and <br>distinguished hospitality brand with a history of
-                    market <br> innovation and excellence in restaurants chain operation. <br> The Salt’n Pepper
-                    Restaurants are
-                    regarded and respected <br> as the number one restaurant entity in Pakistan by local <br> and
-                    foreign
-                    observers.</p>
-                <br> <br>
-                <button class="ml-6 mt-4 Learnmore-btn2"> <a href="#">Learn More</a><span class="p-1">
-                        <i class="fa-sharp fa-solid fa-arrow-right font-size rounded p-1"
-                            style="background-color: #ffffff; color: #ff0000;"></i> </span> </button>
-            </div>
-        </div>
-        <!-- discover area end -->
-
-        <!-- deals area start -->
-        <div class="deals">
-
-            <h1 class="text-center mt-5">Our Deals</h1>
-            <div class="justify-center  mt-5 display-flex wrap">
-                <div class=" display-flex wrap">
-                    <div class="">
-                        <img class="deal-card ml-7" src="assets/superior.webp" alt="food">
-                        <div class=" mt-3 text-center">
-                            <p class="mt-2">Superior</p>
-                            <p class="mt-2 pl-8"  style="font-size: 12px;">Fried Chicken (2 Pcs), Chicken Sandwich
-                                Cold (2 Pcs).</p>
-                            <p class="mt-2">PKR 1,390</p>
-
-                            <button class="mt-2 order-online-btn2" > <a href="#">Order online</a><span class="p-1">
-                                </span> </button>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img class="deal-card ml-7" src="assets/pak bbq.webp" alt="food">
-                        <div class=" mt-3 text-center">
-
-                            <p class="mt-2  ">Pakistan BBQ</p>
-
-                            <p class="mt-2 pl-8" ; style="font-size: 12px;">Chicken Tikka (1 Piece), Chicken Seekh
-                                Kabab (3 Pcs).</p>
-
-                            <p class="mt-2">PKR 1,390</p>
-
-                            <button class="mt-3 order-online-btn2"> <a href="#">Order online</a><span class="p-1">
-                                </span> </button>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img class="deal-card ml-7" src="assets/salan.webp" alt="food">
-                        <div class=" mt-3 text-center">
-
-                            <p class="mt-2  ">Pakistan BBQ</p>
-
-                            <p class="mt-2 pl-8  " style="font-size: 12px;">Chicken Tikka (1 Piece), Chicken Seekh
-                                Kabab (3 Pcs).</p>
-
-                            <p class="mt-2">PKR 1,390</p>
-
-                            <button class="mt-3 order-online-btn2"> <a href="#">Order online</a><span class="p-1">
-                                </span> </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class=" mt-6 display-flex wrap">
-                    <div class="">
-                        <a href=" "><img class="deal-card ml-7" src="assets/vip.webp" alt="food"></a>
-                        <div class=" mt-3 text-center">
-
-                            <p class="mt-2  ">Pakistan BBQ</p>
-
-                            <p class="mt-2 pl-8 " ; style="font-size: 12px;">Chicken Tikka (1 Piece), Chicken Seekh
-                                Kabab (3 Pcs).</p>
-
-                            <p class="mt-2">PKR 1,390</p>
-
-                            <button class="mt-3 order-online-btn2"> <a href="#">Order online</a><span class="p-1">
-                                </span> </button>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img class="deal-card ml-7" src="assets/deluxe.webp" alt="food">
-                        <div class=" mt-3 text-center">
-
-                            <p class="mt-2  ">Pakistan BBQ</p>
-
-                            <p class="mt-2 pl-8" ; style="font-size: 12px;">Chicken Tikka (1 Piece), Chicken Seekh
-                                Kabab (3 Pcs).</p>
-
-                            <p class="mt-2">PKR 1,390</p>
-
-                            <button class="mt-3 order-online-btn2"> <a href="#">Order online</a><span class="p-1">
-                                </span> </button>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img class="deal-card ml-7" src="assets/pak vip.webp" alt="food">
-                        <div class=" mt-3 text-center">
-
-                            <p class="mt-2  ">Pakistan BBQ</p>
-
-                            <p class="mt-2 pl-8" ; style="font-size: 12px;">Chicken Tikka (1 Piece), Chicken Seekh
-                                Kabab (3 Pcs).</p>
-
-                            <p class="mt-2">PKR 1,390</p>
-
-                            <button class="mt-3 order-online-btn2"> <a href="#">Order online</a><span class="p-1">
-                                </span> </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- discover area end -->
-
-        <!-- menu of week area start -->
-
-        <div class="justify-center  mt-5 display-flex wrap menu ">
-            <div class=" mt-4 menu-content">
-                <h3 class="pl-5 mt-5" style="color: #ff0000; letter-spacing: 3px;">MENU OF THE WEEK</h3>
-                <br>
-                <h1 class="pl-5">Something Special <br>
-                    For You To Try This Week!</h1>
-                <br> <br>
-                <p class="pl-5 text-justify" style="color: #7e7c7c; letter-spacing: 1px; font-size: 17px;">The
-                    Boneless Chicken Handi (Portion), Boneless <br> Chicken Boti (4 Pcs), Chicken Seekh Kabab <br> (3
-                    Pcs), Vegetable Biryani, Mint Raita, <br> Kachumar Salad, Nan, Dessert.
-
-                </p>
-                <br> <br>
-
-                <h1 class="pl-5" style="font-size: 20px;">Pakistani VIP</h1>
-                <br>
-                <h1 class="pl-5" style="font-size: 20px;">Price Rs. 1,890 Plus Tax</h1>
-                <br> <br>
-                <button class="ml-10 nav-btn pt-2 pr-2 pb-2 pl-3 rounded"> <a href="#">Order Online</a><span
-                        class="p-1">
-                        <i class="fa-sharp fa-solid fa-arrow-right font-size rounded p-1"
-                            style="background-color: #ffffff; color: #ff0000;"></i> </span></button>
-            </div>
-
-            <div class="mt-4 ">
-                <img class="menu-img1" style="object-fit: cover;" src="assets/kabab.webp" alt="discover-img">
-            </div>
-        </div>
-        <!-- menu of week area end -->
-
-        <!-- social feed area start -->
-        <div class="mt-5">
-            <h1 class="text-center">Social Feed</h1>
-            <div class="justify-around  mt-5  display-flex wrap">
-                <div>
-                    <img class="card-img1  " src="assets/social feed1.webp" alt="pizza image">
-
-                </div>
-
-                <div>
-                    <img class="card-img1 " src="assets/social feed 2.webp" alt="broast image">
-
-                </div>
-
-                <div>
-                    <img class="card-img1 " src="assets/social feed 3.webp" alt="sandwhich image">
-
-                </div>
-
-                <div>
-                    <img class="card-img1 " src="assets/social feed 4.webp" alt="soup image">
-
-                </div>
-
-                <div>
-                    <img class="card-img1 " src="assets/social feed 5.webp" alt=" burger image">
-
-                </div>
-            </div>
-        </div>
-
-        <!-- social feed area end -->
-
-    </main>
-    <!-- Main content end -->
-
-    <!-- footer start -->
-    <footer>
-
-    </footer>
-    <!-- footer start -->
+    </div>
 </body>
-
 </html>

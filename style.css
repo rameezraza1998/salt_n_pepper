@@ -128,32 +128,47 @@ a{
     object-fit: cover;
 }
 
+
 .discover-img1{
     width: 100%;
-    height: 454px;
+    height: 555px;
     object-fit: cover;
+}
+
+.discover{
+    
+    height:555px ;
+    flex: 50%;
 }
 .discover-content{
-    margin: 0%;
-    width: 673px;
-    height: 455px;
+    margin: 0%; 
+    flex: 50%;
+    height: 555px;
     background-color: #0f0f0f;
 }
 
 
+
+.menu{
+    flex: 50%;
+    height:655px ;
+} 
+
+
+.menu-content{
+    flex: 50%;
+    height: 655px;
+    background-color: #0f0f0f;
+}
 .menu-img1{
     width: 100%;
-    height: 600px;
+    /* margin-top: 0%; */
+    height: 655px;
     object-fit: cover;
-    /* margin: 0%; */
+    
    
 }
-.menu-content{
-    width: 673px;
-    height: 600px;
-    background-color: #0f0f0f;
-    /* margin: 0%; */
-}
+
 .deal-card{
     width: 350px;
     height: 225px;
@@ -163,20 +178,40 @@ a{
 /* footer css */
 .footer-box{
     width: 50%; 
-    height: 80vh;
-    border: 1px solid white;
+    height: 60vh;
+    /* border: 1px solid white; */
 }
 .box1{
-    width: 60%;
+    flex: 60%;
     height: 60vh;
 
 }
 
 .box2{
-    width: 40%;
+    flex: 40%;
     height: 60vh;
-    color: #7e7c7c;
+    color: #ffffff;
     
+}
+.box2 a{
+    color: #7e7c7c;
+}
+
+.box3 a{
+    color: #7e7c7c;
+}
+
+
+.box3{
+    flex: 50%;
+    height: 60vh;
+
+}
+
+.box4{
+    flex: 50%;
+    height: 60vh;
+
 }
 
 .logo1{
@@ -184,6 +219,13 @@ a{
     /* background-color: #0f0f0f; */
     width: 230px;
     height: 8vh;
+}
+
+.last-footer{
+    border: 1px solid #7e7c7c;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
 }
 
 /* responsive */
@@ -198,6 +240,50 @@ a{
     }
 }
 
+
+@media (max-width: 800px) {
+    .discover-main {
+      flex-direction: column;
+    }
+  }
+
+  
+@media (max-width: 800px) {
+    .menu-main {
+      flex-direction: column;
+    }
+  }
+
+  
+@media (max-width: 1350px) {
+   
+    
+    .box4{
+        flex-direction: column;
+    }
+  }
+
+
+  
+@media (max-width: 1150px) {
+    .box3{
+        flex-direction: column;
+    }
+  }
+
+  
+@media (max-width: 950px) {
+    .box2{
+        flex-direction: column;
+    }
+  }
+
+  
+@media (max-width: 750px) {
+    .box1{
+        flex-direction: column;
+    }
+  }
 
 
 
