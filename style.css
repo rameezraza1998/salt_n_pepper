@@ -372,6 +372,9 @@ footer{
       flex-direction: column;
     
     }
+    .restaurant{
+        margin-top: 10px;
+    }
     .restaurant-content, .restaurant{
         flex: none;
         width: 100%;
