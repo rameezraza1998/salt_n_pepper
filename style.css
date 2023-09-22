@@ -101,16 +101,15 @@ a{
  .icon{
     display: none;
  }
-  
-@media(max-width: 970px){
-        .items{
-            display: none;
-        }
-        .icon{
-            display: block;
-            
-        }
-}    
+
+ 
+.nav-border{
+    border: 1px solid #1b1a1a;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+ 
 
 /* navbar end */
 
@@ -178,6 +177,59 @@ a{
     height: 225px;
     object-fit: cover;
 }
+
+/* about us css */
+.intro h1{
+    margin-top: 25px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1px;
+    /* font-weight: lighter; */
+}
+.intro{
+    color: #7e7c7c;
+    text-align: center;
+
+}
+.intro-paragraph{
+    padding-left: 100px;
+    padding-right: 100px;
+   
+}
+
+.restaurant-main{
+    padding-left: 100px;
+    padding-right: 100px;
+    height: max-content;
+    /* background-color: #000000; */
+}
+.restaurant{
+    flex: 50%;
+    height:355px ;
+} 
+
+
+.restaurant-content{
+    flex: 50%;
+    height: max-content;
+    background-color: #000000;
+}
+.restaurant-img1{
+    width: 100%;
+    /* margin-top: 0%; */
+    height: max-content;
+    /* object-fit: cover; */
+    
+   
+}
+
+
+
+
+
+
+
+
 
 /* footer css */
 .footer-box{
@@ -308,6 +360,19 @@ footer{
     
     }
     .menu-content, .menu{
+        flex: none;
+        width: 100%;
+    }
+
+  }
+
+   
+@media (max-width: 1300px) {
+    .restaurant-main {
+      flex-direction: column;
+    
+    }
+    .restaurant-content, .restaurant{
         flex: none;
         width: 100%;
     }
