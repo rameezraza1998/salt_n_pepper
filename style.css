@@ -224,6 +224,30 @@ a{
 }
 
 
+/* publication css */
+
+.book{
+    width: 40%;
+    border: 1px solid #7e7c7c;
+    text-align: center;
+    
+}
+.bk-img{
+    
+    height: 500px;
+    width: 500px;
+}
+
+.book1{
+    margin-left: 80px;
+
+}
+
+.book2{
+    margin-right: 80px;
+}
+
+
 
 
 
@@ -357,6 +381,7 @@ footer{
 @media (max-width: 1300px) {
     .menu-main {
       flex-direction: column;
+      
     
     }
     .menu-content, .menu{
@@ -381,6 +406,26 @@ footer{
     }
 
   }
+  
+@media (max-width: 950px) {
+    .publication {
+      flex-direction: column;
+      justify-content: center;
+
+    
+    }
+    .book{
+        flex: none; /* Remove flex to prevent items from growing or shrinking */
+        max-width: 100%; /* Occupy full width */
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 40px; 
+        width: max-content;
+   
+    }
+
+  }
+
 
   
 @media (max-width: 1030px) {
