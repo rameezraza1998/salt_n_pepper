@@ -190,7 +190,9 @@ a{
     /* border: 1px solid white; */
 }
 
+
 .box1{
+    
     flex: 25%;
     height: 60vh;
     text-align: center;
@@ -203,6 +205,7 @@ a{
     color: #7e7c7c;
 }
 .box2{
+    margin-top: 40px;
     flex: 25%;
     height: 60vh;
     color: #ffffff;
@@ -228,6 +231,7 @@ a{
 
 
 .box3{
+    margin-top: 40px;
     flex: 25%;
     height: 60vh;
     text-align: center;
@@ -235,6 +239,7 @@ a{
 }
 
 .box4{
+    margin-top: 40px;
     flex: 25%;
     height: 60vh;
     text-align: center;
@@ -242,9 +247,9 @@ a{
 }
 
 .logo1{
-    margin-top: 15px;
+    /* margin-top: 15px; */
     /* background-color: #0f0f0f; */
-    width: 230px;
+    /* width: 230px; */
     height: 8vh;
 }
 
@@ -286,22 +291,24 @@ footer{
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
     .discover-main {
       flex-direction: column;
     }
     .discover-content, .discover{
+        flex: none;
         width: 100%;
     }
   }
 
   
-@media (max-width: 800px) {
+@media (max-width: 1300px) {
     .menu-main {
       flex-direction: column;
     
     }
     .menu-content, .menu{
+        flex: none;
         width: 100%;
     }
 
@@ -319,11 +326,24 @@ footer{
     
     .box1, .box2, .box3, .box4{
         flex: none;
-        width: 50%;
+        width: 100%;
     }
 
   }
 
+  
+  @media (max-width: 1050px) {
+    .last-footer {
+      flex-direction: column;
+    
+    }
+    .foot1{
+        flex: none;
+        width: 100%;
+       
+    }
+
+  }
 
 
 /* utility classes start */
