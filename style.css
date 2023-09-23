@@ -247,6 +247,15 @@ a{
     margin-right: 80px;
 }
 
+.info{
+    text-align: center;
+    
+}
+.info p{
+    color: #7e7c7c;
+    
+}
+
 
 
 
@@ -268,7 +277,7 @@ a{
 
 
 .box1{
-    
+    /* margin-top: 20px; */
     flex: 25%;
     height: 60vh;
     text-align: center;
@@ -281,7 +290,7 @@ a{
     color: #7e7c7c;
 }
 .box2{
-    margin-top: 40px;
+    /* margin-top: 40px; */
     flex: 25%;
     height: 60vh;
     color: #ffffff;
@@ -296,9 +305,6 @@ a{
     color: #7e7c7c;
 }
 
-.box3 a{
-    color: #7e7c7c;
-}
 
 
 .box4 a{
@@ -307,15 +313,19 @@ a{
 
 
 .box3{
-    margin-top: 40px;
+    /* margin-top: 40px; */
     flex: 25%;
     height: 60vh;
     text-align: center;
 
 }
 
+.box3 a{
+    color: #7e7c7c;
+}
+
 .box4{
-    margin-top: 40px;
+    /* margin-top: 40px; */
     flex: 25%;
     height: 60vh;
     text-align: center;
@@ -438,6 +448,7 @@ footer{
     }
     
     .box1, .box2, .box3, .box4{
+        margin-top: 10px;
         flex: none;
         width: 100%;
     }
